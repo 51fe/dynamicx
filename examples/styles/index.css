@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+  cursor: default;
+  user-select: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  background-color: white;
+  min-width: 620px;
+}
+
+.navContainer {
+  border-bottom: 1px solid #EBEFF4;
+}
+nav {
+  width: 580px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #496281;
+  padding: 14px 0;
+  height: 21px;
+}
+nav.foot {
+  padding-top: 30px;
+  padding-bottom: 34px;
+}
+nav a {
+  color: teal;
+  text-decoration: none;
+}
+nav a:not(.right) {
+  margin-right: 30px;
+}
+nav a.stripe {
+  color: #394E6E;
+}
+nav .right {
+  float: right;
+}
+nav .right a {
+  margin-right: 0px;
+}
+
+header {
+  width: 580px;
+  height: 188px;
+  text-align: center;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  color: teal;
+  padding-top: 32px;
+  margin-bottom: 32px;
+}
+h2 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #394E6E;
+  width: 380px;
+  margin: 0 auto;
+}
+h3 {
+  font-weight: normal;
+  font-size: 18px;
+  color: #394E6E;
+  text-align: center;
+  margin: 0 auto;
+}
+h4 {
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+  width: 580px;
+  margin: 0 auto;
+}
+
+section.editor #editor, section.editor #editor * {
+  font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+  font-size: 15px;
+}
+
+section.editor #editor > div.settings select {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+section.demo {
+  height: 114px;
+}
+div.track {
+  position: absolute;
+  top: 50%;
+  left: 125px;
+  width: 350px;
+  height: 1px;
+  background-color: #e0effe;
+  transition: width .25s ease-in-out;
+}
+div.track.tiny {
+  width: 50px;
+}
+div.track > span.circle {
+  position: absolute;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-color: white;
+  border: 1px solid #e0effe;
+  border-radius: 5px;
+  top: -5px;
+}
+div.track > span.circle0 { left: -5px; }
+div.track > span.circle1 { right: -5px; }
+div.track > span.index {
+  top: 24px;
+  left: -3px;
+  font-size: 10px;
+  color: #8096B1;
+  position: absolute;
+  user-select: none;
+  -webkit-user-select: none;
+}
+div.track > span.index1 {
+  left: auto;
+  right: -3px;
+}
+div.circle {
+  position: absolute;
+  top: 40px;
+  left: 108px;
+  width: 34px;
+  height: 34px;
+  background-color: #008080;
+  border-radius: 17px;
+}
+
+section.code {
+  background-color: #F4F9FF;
+  padding: 17px 17px 14px;
+}
+section.code a {
+  color: #008080;
+  font-size: 15px;
+  display: block;
+  border-top: 1px solid rgba(1, 100, 200, .1);
+  margin-top: 17px;
+  padding-top: 10px;
+}
+section.code pre {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: pre-wrap;
+  font-family: "Source Code Pro", Menlo, Courier, Arial;
+  font-size: 14px;
+  color: #496281;
+  line-height: 18px;
+  user-select: auto;
+  cursor: text;
+}
+section.code strong {
+  font-family: "Source Code Pro", Menlo, Courier, Arial;
+  font-weight: 600;
+  user-select: auto;
+  color: #214373;
+}
+
+.examplesContainer {
+  background-color: teal;
+  background-color: -webkit-linear-gradient(top, #41b883, teal);
+  background-color: -moz-linear-gradient(top, #41b883, teal);
+  background-color: linear-gradient(top, #41b883, teal);
+  border-top: 1px solid teal;
+  border-bottom: 1px solid teal;
+  width: 100%;
+  margin-top: 40px;
+}
+section.examples {
+  overflow: hidden;
+  width: 600px;
+  padding-bottom: 40px;
+}
+section.examples > h3 {
+  padding: 30px 0 0;
+  color: #F6F9FF;
+  font-size: 38px;
+}
+section.examples > h4 {
+  padding: 0 0 6px;
+  color: #CAD6E9;
+  font-size: 20px;
+}
+section.examples > h4 > span {
+  background-color: #008080;
+  border-radius: 1px;
+  display: inline-block;
+  padding: 2px 3px;
+}
+.example {
+  width: calc(100% / 2 - 20px);
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+}
+.example p {
+  float: left;
+  font-size: 20px;
+  color: #F6F9FF;
+  padding-bottom: 8px;
+}
+.example a.link {
+  float: right;
+  font-size: 15px;
+  color: #CAD6E9;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-right: 12px;
+  background: url(img/iconArrow@1x.png) no-repeat right 13px;
+}
+.example iframe, .example .over {
+  display: block;
+  clear: both;
+  border: none;
+  width: 100%;
+  height: 280px;
+}
+.example .over {
+  position: relative;
+  margin-top: -280px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .example a.link {
+    background-image: url(img/iconArrow@2x.png);
+    background-size: 8px 8px;
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="icon" type="image/png" href="img/favicon.svg">
+  <link rel="stylesheet" href="styles/common.css">
+  <style>
+    nav {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -114px;
+      margin-top: -118px;
+      width: 228px;
+      height: 260px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 21px 26px 0 26px;
+      -webkit-transform-origin: 50% 10px;
+      -moz-transform-origin: 50% 10px;
+      transform-origin: 50% 10px;
+      -webkit-transform: scale(.1);
+      transform: scale(.1);
+      opacity: 0;
+      background: url(./img/menu@1x.png);
+    }
+
+    ul {
+      font: 16px 'Source Sans Pro', 'HelveticaNeue', Arial;
+      color: #496281;
+      list-style: none;
+      overflow: hidden;
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+
+    li {
+      height: 25px;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+      nav {
+        background: url(./img/menu@2x.png);
+        background-size: 100% 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section id="example">
+    <nav>
+      <ul>
+        <li>Checkout</li>
+        <li>Subscriptions</li>
+        <li>Connect</li>
+        <li>Apple Pay</li>
+        <li>Android Pay</li>
+        <li>Bitcoin</li>
+        <li>Gallery</li>
+      </ul>
+    </nav>
+  </section>
+  <script type="module" src="scripts/menu.js"></script>
+</body>
+
+</html>

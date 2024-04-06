@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pin</title>
+  <link rel="icon" type="image/png" href="img/favicon.svg">
+  <link rel="stylesheet" href="styles/common.css">
+  <style>
+    .pin {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -38px;
+      margin-top: -53px;
+    }
+
+    .pin,
+    svg {
+      -webkit-transform-origin: 50% 100%;
+      -moz-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="example">
+    <div class="pin">
+      <svg width="76" height="107" viewBox="0 0 76 107" xmlns="http://www.w3.org/2000/svg">
+        <path d="M38 106.7c2.4 0 37.7-43 37.8-68.8 0-21-17-38-38-38C17 0 0 17 0 38c.4 27 35.4 68.7 38 68.7z" fill="darkred"/>
+        <ellipse fill="#FFF" cx="38.1" cy="38.1" rx="23.1" ry="23.1"/>
+      </svg>
+    </div>
+  </section>
+  <script type="module" src="scripts/pin.js"></script>
+</body>
+
+</html>

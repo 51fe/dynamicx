@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loader</title>
+  <link rel="icon" type="image/png" href="img/favicon.svg">
+  <link rel="stylesheet" href="styles/common.css">
+  <style>
+    .loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -60px;
+      margin-top: -12px;
+    }
+
+    .dot {
+      float: left;
+      margin: 0 8px;
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      background: black;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="example">
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </section>
+  <script type="module" src="scripts/loader.js"></script>
+</body>
+
+</html>

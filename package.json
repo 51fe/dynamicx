@@ -1,0 +1,49 @@
+{
+  "name": "dynamicx",
+  "private": false,
+  "version": "1.0.5",
+  "homepage": "https://51fe.github.io/dynamicx",
+  "keywords": [
+    "Dynamicx",
+    "JavaScript",
+    "Animation",
+    "library"
+  ],
+  "author": "riafan@hotmail.com",
+  "type": "module",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "main": "./dist/dynamicx.umd.cjs",
+  "module": "./dist/dynamicx.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/dynamicx.js",
+    "require": "./dist/dynamicx.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "cp": "cp ./dist/dynamicx.js ./examples/lib",
+    "build": "tsc && vite build --mode=es && vite build && npm run cp",
+    "test": "jest",
+    "format": "prettier --write src/"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-typescript": "^7.24.1",
+    "@types/color-convert": "^2.0.3",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10",
+    "vite-plugin-dts": "^3.8.1"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
