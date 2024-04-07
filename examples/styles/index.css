@@ -228,7 +228,7 @@ section.examples > h4 > span {
   text-decoration: none;
   padding-top: 5px;
   padding-right: 12px;
-  background: url(img/iconArrow@1x.png) no-repeat right 13px;
+  background: url(../img/iconArrow@1x.png) no-repeat right 13px;
 }
 .example iframe, .example .over {
   display: block;
@@ -243,7 +243,7 @@ section.examples > h4 > span {
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
   .example a.link {
-    background-image: url(img/iconArrow@2x.png);
+    background-image: url(../img/iconArrow@2x.png);
     background-size: 8px 8px;
   }
 }
