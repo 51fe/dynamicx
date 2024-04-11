@@ -16,66 +16,113 @@ declare interface AnimationOptions {
 }
 
 declare type AnimationProps = {
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/azimuth */
     azimuth?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/baseFrequency */
     baseFrequency?: number;
-    begin?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/bias */
     bias?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/cx */
     cx?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/cy */
     cy?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d */
     d?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/diffuseConstant */
     diffuseConstant?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/divisor */
     divisor?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dx */
     dx?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dy */
     dy?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/elevation */
     elevation?: number;
-    filterRes?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/flood-color */
     floodColor?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/flood-opacity */
     floodOpacity?: number;
-    fr?: number;
-    fx?: number;
-    fy?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fx */
+    fx?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fy */
+    fy?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/gradientTransform */
     gradientTransform?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/letter-spacing */
     letterSpacing?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lighting-color */
     lightingColor?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/limitingConeAngle */
     limitingConeAngle?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k1 */
     k1?: number;
     k2?: number;
     k3?: number;
     k4?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/markerWidth */
     markerWidth?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/markerHeight */
     markerHeight?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/numOctaves */
     numOctaves?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kernelMatrix */
     kernelMatrix?: string;
-    kernelUnitLength?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pathLength */
     pathLength?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/patternTransform */
     patternTransform?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/points */
     points?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsAtX */
     pointsAtX?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsAtY */
     pointsAtY?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsAtZ */
     pointsAtZ?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/r */
     r?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/radius */
     radius?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx */
     rx?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ry */
     ry?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft */
     scrollLeft?: PropValue;
     scrollRight?: PropValue;
     scrollTop?: PropValue;
     scrollBottom?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/seed */
     seed?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/specularConstant */
     specularConstant?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/specularExponent */
     specularExponent?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stdDeviation */
     stdDeviation?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/surfaceScale */
     surfaceScale?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stop-color */
     stopColor?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stop-opacity */
     stopOpacity?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/textLength */
     textLength?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox */
     viewBox?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x */
     x?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y */
     y?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x1 */
     x1?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x2 */
     x2?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y1 */
     y1?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y2 */
     y2?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/z */
     z?: PropValue;
 } | CSSProps;
 
@@ -89,7 +136,9 @@ declare interface BezierPoint extends BasePoint {
 }
 
 declare interface CSSProps {
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/background-color */
     backgroundColor?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/border-color */
     borderColor?: PropValue;
     borderLeftColor?: PropValue;
     borderRightColor?: PropValue;
@@ -97,29 +146,43 @@ declare interface CSSProps {
     borderBottomColor?: PropValue;
     bottom?: PropValue;
     color?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill */
     fill?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-opacity */
     fillOpacity?: number;
     height?: PropValue;
     left?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/margin */
+    margin?: PropValue;
     marginTop?: PropValue;
     marginLeft?: PropValue;
     marginBottom?: PropValue;
     marginRight?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/max-height */
     maxHeight?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/min-height */
     minHeight?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/min-width */
     minWidth?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/max-width */
     maxWidth?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
     borderRadius?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/opacity */
     opacity?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/padding */
+    padding?: PropValue;
     paddingTop?: PropValue;
     paddingLeft?: PropValue;
     paddingBottom?: PropValue;
     paddingRight?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/perspective */
     perspective?: string;
     perspectiveX?: string;
     perspectiveY?: string;
     perspectiveZ?: string;
     right?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/rotate */
     rotate?: PropValue;
     rotateX?: PropValue;
     rotateY?: PropValue;
@@ -128,21 +191,26 @@ declare interface CSSProps {
     rotateCX?: PropValue;
     rotateCY?: PropValue;
     rotateCZ?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
     transform?: string;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/scale */
     scale?: PropValue;
     scaleX?: PropValue;
     scaleY?: PropValue;
     scaleZ?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/stroke */
     stroke?: string;
     strokeDasharray?: string;
     strokeDashoffset?: PropValue;
     StrokeOpacity?: number;
     strokeWidth?: number;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew */
     skew?: PropValue;
     skewX?: PropValue;
     skewY?: PropValue;
     skewZ?: PropValue;
     top?: PropValue;
+    /** MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/translate */
     translate?: PropValue;
     translateX?: PropValue;
     translateY?: PropValue;
@@ -258,7 +326,7 @@ declare class Dynamicx {
      *   complete: animate2
      * })
      * ```
-     * Documentation: https://github.com/51fe/dynamicx/#reference
+     * Doc: https://github.com/51fe/dynamicx/#reference
      */
     animate<T = Target>(el: T, properties: (T extends Target ? AnimationProps : Record<string, PropValue | PropValue[]>), options: AnimationOptions): void;
     /**

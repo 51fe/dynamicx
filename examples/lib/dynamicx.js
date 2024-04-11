@@ -1120,7 +1120,7 @@ class Set {
 const pxProperties = new Set("marginTop,marginLeft,marginBottom,marginRight,paddingTop,paddingLeft,paddingBottom,paddingRight,top,left,bottom,right,translateX,translateY,translateZ,perspectiveX,perspectiveY,perspectiveZ,width,height,maxWidth,maxHeight,minWidth,minHeight,borderRadius".split(","));
 const degProperties = new Set("rotate,rotateX,rotateY,rotateZ,skew,skewX,skewY,skewZ".split(","));
 const transformProperties = new Set("translate,translateX,translateY,translateZ,scale,scaleX,scaleY,scaleZ,rotate,rotateX,rotateY,rotateZ,rotateC,rotateCX,rotateCY,skew,skewX,skewY,skewZ,perspective".split(","));
-const svgProperties = new Set("cx,cy,d,dx,dy,fill,fillOpacity,filterRes,floodColor,floodOpacity,gradientTransform,height,kernelMatrix,letterSpacing,lightingColor,limitingConeAngle,markerHeight,markerWidth,numOctaves,opacity,patternTransform,points,r,rx,ry,specularConstant,specularExponent,stdDeviation,stopColor,stopOpacity,stroke,strokeWidth,strokeDashoffset,strokeOpacity,textLength,transform,viewBox,width,x,x1,x2,y,y1,y2,z".split(","));
+const svgProperties = new Set("cx,cy,d,dx,dy,fill,fillOpacity,floodColor,floodOpacity,gradientTransform,height,kernelMatrix,letterSpacing,lightingColor,limitingConeAngle,markerHeight,markerWidth,numOctaves,opacity,patternTransform,points,r,rx,ry,specularConstant,specularExponent,stdDeviation,stopColor,stopOpacity,stroke,strokeWidth,strokeDashoffset,strokeOpacity,textLength,transform,viewBox,width,x,x1,x2,y,y1,y2,z".split(","));
 const stringProperties = new Set("azimuth,baseFrequency,bias,diffuseConstant,divisor,elevation,k1,k2,k3,k4,fr,fx,fy,limitingConeAngle,pathLength,pointsAtX,pointsAtY,pointsAtZ,radius,seed,surfaceScale".split(","));
 const isDocumentVisible = () => {
   return (document == null ? void 0 : document.visibilityState) === "visible";
@@ -1869,7 +1869,7 @@ class Dynamicx {
    *   complete: animate2
    * })
    * ```
-   * Documentation: https://github.com/51fe/dynamicx/#reference
+   * Doc: https://github.com/51fe/dynamicx/#reference
    */
   animate(el, properties, options) {
     const fn = (el2, properties2, options2) => {

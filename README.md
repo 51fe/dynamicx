@@ -1,19 +1,19 @@
 # Dynamicx
 
-Dynamicx is the ES version of dynamics.js (a JavaScript library to create physics-based animations) for better coding experience. Here are some [examples](https://51fe.github.io/dynamicx)
+Dynamicx is the ES version of dynamics.js (a JavaScript library to create physics-based animations) for better coding experience. Here are some [examples](https://51fe.github.io/dynamicx).
 
 ## Usage
 Download:
 - [GitHub releases](https://github.com/51fe/dynamicx/releases)
 - [npm](https://www.npmjs.com/package/dynamicx): `npm install dynamicx`
 
-import `dynamicx` into your modue:
+import `dynamicx` into your module:
 
 ```javascript
 import dynamicx from 'dynamicx'
 ```
 
-You can animate [CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) of DOM element. Here in  dynamicx, [Length properties](https://developer.mozilla.org/en-US/docs/Web/CSS/length), [transform functions](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function) are most used. For length property values, we can simply use number, the default unit is `px`. 
+You can animate [CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) of DOM element. Here in  dynamicx, [length properties](https://developer.mozilla.org/en-US/docs/Web/CSS/length), [transform functions](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function) are most used. For length property values, we can simply use number, the default unit is `px`. 
 
 ```javascript
 var el = document.getElementById('logo')
@@ -124,7 +124,7 @@ No properties
 ### dynamicx.bezier
 - `points` array of points and control points
 
-The easiest way to output this kind of array is to use the [curve creator](https://dynamicx.netlify.app). Here is an example:
+The easiest way to output this kind of array is to use the [curve creator](https://51fe.github.io/dynamicx). Here is an example:
 
 ```javascript
 [{x:0, y:0, cp:[{x:0.2, y:0}]},

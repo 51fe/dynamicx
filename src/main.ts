@@ -11,8 +11,7 @@ function start() {
   dynamicx.animate(
     spinner,
     {
-      opacity: 1,
-      borderBottomColor: '#43F086'
+      opacity: 1
     },
     {
       duration: 250,
@@ -90,7 +89,7 @@ function animateSuccess() {
           line,
           {
             strokeWidth: 100,
-            stroke: 'teal'
+            stroke: '#0AB000'
           },
           {
             friction: 200,
@@ -102,7 +101,7 @@ function animateSuccess() {
         dynamicx.animate(
           arrows,
           {
-            fill: 'teal',
+            fill: '#0AB000',
             translate: 5.5,
             scale: 0.5
           },

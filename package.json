@@ -1,18 +1,19 @@
 {
   "name": "dynamicx",
   "private": false,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "homepage": "https://51fe.github.io/dynamicx",
   "keywords": [
     "Dynamicx",
     "JavaScript",
     "Animation",
-    "library"
+    "Library"
   ],
   "author": "riafan@hotmail.com",
   "type": "module",
   "files": [
     "dist",
+    "test",
     "package.json",
     "README.md"
   ],
