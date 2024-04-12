@@ -514,7 +514,7 @@ class DecomposedMatrix {
     this.quaternion = [];
     this.toMatrix = this.toMatrix.bind(this);
   }
-  interpolate(decomposedB, t, only = null) {
+  interpolate(decomposedB, t, only = []) {
     const decomposedA = this;
     const decomposed = new DecomposedMatrix();
     const interpolateValue = (valA, valB, t2) => {

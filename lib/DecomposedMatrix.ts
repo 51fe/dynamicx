@@ -17,7 +17,7 @@ class DecomposedMatrix implements Interpolable<DecomposedMatrix, string> {
   interpolate(
     decomposedB: DecomposedMatrix,
     t: number,
-    only: string[] | null = null
+    only: string[] = []
   ): DecomposedMatrix {
     const decomposedA = this
     const decomposed = new DecomposedMatrix()

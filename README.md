@@ -1,6 +1,6 @@
 # Dynamicx
 
-Dynamicx is the ES version of dynamics.js (a JavaScript library to create physics-based animations) for better coding experience. Here are some [examples](https://51fe.github.io/dynamicx).
+Dynamicx is the ESM version of dynamics.js (a JavaScript library to create physics-based animations) for better coding experience. Here are some [examples](https://51fe.github.io/dynamicx).
 
 ## Usage
 Download:
