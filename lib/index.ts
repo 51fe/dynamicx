@@ -335,7 +335,7 @@ const applyProperties = (el: AnimateElement, properties: Dic) => {
       } else if (el.style != null) {
         el.style[propertyWithPrefix(k)] = v
       }
-      if (!(el instanceof SVGElement) && k in el) { // TODO
+      if (!(el instanceof SVGElement) && k in el) {
         el[k] = v;
       }
     }
@@ -445,7 +445,7 @@ const getCurrentProperties = (el: AnimateElement, keys: string[]) => {
       }
     }
   } else {
-    for (const k of keys) { // TODO
+    for (const k of keys) {
       properties[k] = createInterpolable(el[k])
     }
   }
@@ -458,7 +458,7 @@ const addUnitsToNumberInterpolables = (el: AnimateElement, properties: Dic) => {
     let interpolable = properties[k]
     if (interpolable instanceof InterpolableNumber) {
       if (el.style != null && k in el.style) {
-        interpolable = new InterpolableString([interpolable, unitForProperty(k)]) // TODO
+        interpolable = new InterpolableString([interpolable, unitForProperty(k)])
       }
     }
     properties[k] = interpolable
@@ -560,7 +560,7 @@ const animationTick = (t: number, animation: AnimationType) => {
   return tt < 1
 }
 
-const interpolate = (start: InterpolableString, end: InterpolableString, y: number) => { // TODO
+const interpolate = (start: InterpolableString, end: InterpolableString, y: number) => {
   if (start.interpolate != null) {
     return start.interpolate(end, y)
   }
@@ -594,7 +594,7 @@ const startAnimation = (el: AnimateElement,
       transforms.push([k, v])
     } else if (stringProperties.contains(k)) {
       // number conversion for some svg attrs (elevation, fx...)
-      endProperties[k] = InterpolableString.create(v) // TODO
+      endProperties[k] = InterpolableString.create(v)
     } else {
       endProperties[k] = createInterpolable(v)
     }
